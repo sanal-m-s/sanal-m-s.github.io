@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Logo</p>
+            </div>
+            <div class="nav-menu" id="mynavmenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>  
+                </ul>
+            </div>
+            <!-- Dark mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!-- main -->
+         <main class="wrapper">
+            <section class="featured-box">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is sanal! I'm a web developer</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-me">Hire Me</button>
+                        <button class="btn">Download CV<i class="uil uil-file"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon_circle"></div>
+                        <div class="icon" ><a href="https://www.instagram.com/__.sanal.__/"><i class="uil uil-instagram"></i></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/sanal-m-s-a75b77276"><i class="uil uil-linkedin-alt"></i></a></div>
+                        <div class="icon"><a href="https://x.com/sanal80469020"><i class="uil uil-twitter-alt"></i></a></div>
+                        <div class="icon"><a href="https://github.com/sanal-m-s "><i class="uil uil-github-alt"></i></a></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="me.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- about box -->            
+             <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <img src="me.png" alt="" class ="profile" />
+                                <h2>Web developer</h2>
+                                <p>My name is sanal! I'm a web developer</p>
+                            </figure>
+                            <button class="about-me-btn">Hire Me</button>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per">
+                                    <span class="tooltip">80%</span>
+                                </span>  
+                            </div>
+                        </div>
+                            <div class="skill-box">
+                                <span class="title">CSS</span>
+                                <div class="skill-bar css">
+                                    <span class="skill-per">
+                                        <span class="tooltip">85%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        <div class="skill-box">
+                        <span class="title">Python</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Javascript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per Javascript">
+                                    <span class="tooltip">40%</span>
+                                </span>
+                            </div>    
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Php</span>
+                                <div class="skill-bar">
+                                    <span class="skill-per php">
+                                        <span class="tooltip">30%</span>
+                                    </span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+             </section>
+             <!-- project box -->
+                <section class="section" id="projects">
+                    <div class="top-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-award-alt"></i>
+                            <h3>studing MCA</h3>
+                            <label>GOVT engg collage kottayam</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-users-alt"></i>
+                            <h3>clients</h3>
+                            <label>no clients yet</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-briefcase-alt"></i>
+                            <h3>completed</h3>
+                            <label>1+ Projects</label>
+                        </div> 
+                    </div>    
+                </section>
+              <!-- contact box -->
+               <section class="section" id="contact">
+                <div class="top-headear">
+                    <h1>Let's Work Together</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope">Email:sanalms08@gmail.com</i></p>
+                                <p><i class="uil uil-phone">Phone:8547931827</i></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="from-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" placeholder="Your Name">
+                                    <input type="text" class="input-field" placeholder="Your Email">
+                                </div>
+                                <form action="sanalms@gmail.com" method="post">
+                                    <div class="text-area">
+                                        <input type="text" class="input-subject" placeholder="subject">
+                                        <textarea placeholder="message"></textarea>
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="btn">send <i class="uil uil-message"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+               </section>
+         </main>
+         <!-- footer -->
+          <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon_circle"></div>
+                <div class="icon_circle"></div>
+                <div class="icon" ><a href="https://www.instagram.com/__.sanal.__/"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/sanal-m-s-a75b77276"><i class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="https://x.com/sanal80469020"><i class="uil uil-twitter-alt"></i></a></div>
+                <div class="icon"><a href="https://github.com/sanal-m-s "><i class="uil uil-github-alt"></i></a></div>
+            </div>
+            <div class="bottom-footer">
+                <p>copyright &copy; <a href="#home" style="text-decoration: none;">sanal</a> - All rights reserved 2024</p>
+            </div>
+          </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
