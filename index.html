@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- Page Title -->
+    <title>SANAL M S</title>
+
+
+
+    <!-- Viewport Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Favicon & Icons Start -->
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="img/favicon/manifest.webmanifest">
+    <!-- Template Favicon & Icons End -->
+
+
+
+    <!-- Template Styles Start -->
+    <link rel="stylesheet" href="css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Template Styles End -->
+
+    <!-- Custom Browser Color Start -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Custom Browser Color End -->
+    <style>
+    #status {
+        width: 100%;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+
+      .success-message {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .error-message {
+        background-color: #f44336;
+        color: white;
+        padding: 15px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .popup-content {
+       background: var(--theme-color); /* Uses your website's theme color */
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 90%;
+        width: 400px;
+        color: white;
+
+      .popup p {
+        margin: 0 0 20px 0;
+        font-size: 18px;
+      }
+
+      .popup .btn-caption {
+        color: inherit;
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .close-popup {
+      padding: 10px 30px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+      .close-popup:hover {
+        background: #0056b3;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Loader Start -->
+    <div id="loader" class="loader">
+      <div id="loaderContent" class="loader__content">
+        <div class="loader__shadow"></div>
+        <div class="loader__box"></div>
+      </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header id="header" class="header d-flex justify-content-between">
+
+      <!-- Navigation Menu Start -->
+      <div class="header__navigation">
+        <nav id="menu" class="menu">
+          <ul class="menu__list d-flex justify-content-start">
+            <li class="menu__item">
+              <a class="menu__link btn" href="#home">
+                <span class="menu__caption">Home</span>
+                <i class="ph-bold ph-house-simple"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#portfolio">
+                <span class="menu__caption">Portfolio</span>
+                <i class="ph-bold ph-squares-four"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#about">
+                <span class="menu__caption">About Me</span>
+                <i class="ph-bold ph-user"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#resume">
+                <span class="menu__caption">Resume</span>
+                <i class="ph-bold ph-article"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#contact">
+                <span class="menu__caption">Contact</span>
+                <i class="ph-bold ph-envelope"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link btn" href="#blog" data-section="blog">
+                    <span class="menu__caption">Blog</span>
+                    <i class="ph-bold ph-newspaper"></i>
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navigation Menu End -->
+<!-- Header Controls Start -->
+<div class="header__controls d-flex justify-content-end">
+  <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+  <a id="notify-trigger" class="header__trigger btn" href="mailto:sanalms08@gmail.com?subject=Message%20from%20your%20site">
+    <span class="trigger__caption">Let's Talk</span>
+    <i class="ph-bold ph-chat-dots"></i>
+  </a>
+</div>
+<!-- Header Controls End -->
+
+    </header>
+    <!-- Header End -->
+
+    <!-- SVG Background Start -->
+    <div id="svgBackground" class="svg-background">
+      <!-- top svg item -->
+      <div class="background__svg01" data-speed="0.8">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+          <style type="text/css">
+            .bg01{fill:url(#color-gradient);}
+          </style>
+          <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162" gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)" gradientUnits="userSpaceOnUse">
+            <stop  offset="0" style="stop-color:#CEC4EF"/>
+            <stop  offset="1" style="stop-color:#CEC4EF;stop-opacity:0"/>
+          </radialGradient>
+          <circle class="bg01" cx="500" cy="500" r="500"/>
+        </svg>
+      </div>
+      <!-- bottom svg item -->
+      <div class="background__svg02" data-speed="0.4">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
+          viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
+        <style type="text/css">
+          .bg02{fill:url(#color-gradient-2);}
+        </style>
+        <g id="Layer_1-2">
+          <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191" fy="-11419.6494" gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)" gradientUnits="userSpaceOnUse">
+            <stop  offset="0" style="stop-color:#CEC4EF"/>
+            <stop  offset="1" style="stop-color:#CEC4EF;stop-opacity:0"/>
+          </radialGradient>
+          <path class="bg02" d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z"/>
+        </g>
+        </svg>
+      </div>
+    </div>
+    <!-- SVG Background End -->
+
+    <!-- Avatar Side Block Start -->
+    <div id="avatar" class="avatar">
+      <div class="avatar__container d-flex flex-column justify-content-lg-between">
+        <!-- image and logo -->
+        <div class="avatar__block">
+          <div class="avatar__logo d-flex align-items-center">
+            <div class="logo__image">
+              <!-- Your Logo Here!!! -->
+              <!--<img src="img/logo.svg" alt="sanal m s - Personal Portfolio & Resume HTML Template Logo">-->
+                </style>
+                <g>
+                  <linearGradient id="gradientFill" gradientUnits="userSpaceOnUse" x1="9.9604" y1="75.0338" x2="75.0387" y2="9.9555">
+                    <stop  offset="0" style="stop-color:var(--accent)"/>
+                    <stop  offset="1" style="stop-color:var(--secondary)"/>
+                  </linearGradient>
+                  <path class="gradient-fill" d="M51,0H34C15.2,0,0,15.2,0,34v17c0,14.3,8.9,26.6,21.4,31.6c0,0,0,0,0,0l0,0C25.3,84.1,29.5,85,34,85h17
+                    c6,0,11.7-1.6,16.6-4.3c0.1-0.1,0.2-0.1,0.3-0.2C78.1,74.6,85,63.6,85,51V34C85,15.2,69.8,0,51,0z M83,51c0,10.7-5.3,20.2-13.4,26
+                    v-2.5v-3.9h3.9v-3.9h-3.9v-3.9h3.9v-3.9h-3.9H67v-3.9V51h-3.9v3.9v3.9h2.6v3.9v3.9v3.9h-3.9h-3.9v3.9h3.9h3.9v3.9v1
+                    C61.3,81.7,56.3,83,51,83H34c-4.5,0-8.7-0.9-12.6-2.6v-2v-3.9h3.9h3.9v-3.9h-3.9h-3.9v-3.9v-3.9v-3.9H24v-3.9V51h-3.9v3.9v3.9h-2.6
+                    h-3.9v3.9h3.9v3.9h-3.9v3.9h3.9v3.9v3.9C8.2,72.8,2,62.6,2,51V34C2,16.4,16.4,2,34,2h17c17.6,0,32,14.4,32,32V51z M50.1,54.9H54
+                    v3.9v3.9h-3.9v-3.9V54.9z M33.1,54.9H37v3.9v3.9h-3.9v-3.9V54.9z M27.9,51H24v-3.9v-3.9v-3.9h3.9v3.9v3.9V51z M31.8,39.3h-3.9v-3.9
+                    h3.9V39.3z M31.8,43.2v-3.9h3.9v3.9H31.8z M63.1,47.1V51h-3.9v-3.9v-3.9v-3.9h3.9v3.9V47.1z M35.7,47.1v-3.9h3.9h3.9h3.9h3.9v3.9
+                    h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43.2z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="logo__caption">
+              <p>Sanal m s</p>
+            </div>
+          </div>
+          <div class="avatar__image">
+            <img src="img/avatars/sanal.png" alt="sanal">
+          </div>
+        </div>
+        <!-- data caption #1 -->
+        <div class="avatar__block">
+          <h6>
+            <small class="top">Specialization:</small>
+            UI/UX
+          </h6>
+        </div>
+        <!-- data caption #2 -->
+        <div class="avatar__block">
+          <h6>
+            <small class="top">Based in:</small>
+            kerala , India 
+          </h6>
+        </div>
+        <!-- socials and CTA button -->
+        <div class="avatar__block">
+          <div class="avatar__socials">
+            <ul class="socials-square d-flex justify-content-between">
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://wa.link/4yc03p" target="_blank"><i class="ph-bold ph-whatsapp-logo"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://www.linkedin.com/in/ruby-717848332" target="_blank"><i class="ph-bold ph-linkedin-logo"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://www.instagram.com/ruby.snorlax/" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://x.com/poetrybyruby" target="_blank"><i class="ph-bold ph-twitter-logo"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://github.com/rubydamodar" target="_blank"><i class="ph-bold ph-github-logo"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="mailto:rubypoddarr@gmail.com" target="_blank"><i class="ph-bold ph-envelope-simple"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="avatar__btnholder">
+            <a class="btn btn-default btn-fullwidth btn-hover btn-hover-accent" href="#contact" target="_blank">
+              <span class="btn-caption">Let's Work Together!</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Avatar Side Block End -->
+
+    <!-- Page Content Start -->
+    <div id="content" class="content">
+      <div class="content__wrapper">
+
+        <!-- Intro Section Start -->
+        <section id="home" class="main intro">
+
+          <!-- Headline Start -->
+          <div id="headline" class="headline d-flex align-items-start flex-column">
+            <p class="headline__subtitle animate-headline">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Let's meet!</span>
+            </p>
+            <h1 class="headline__title animate-headline">I'm Sanal M S<br>UI/UX designer</h1>
+            <div class="headline__btnholder d-flex flex-column flex-sm-row">
+              <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="#portfolio">
+                <span class="btn-caption">My Works</span>
+                <i class="ph-bold ph-squares-four"></i>
+              </a>
+
+              <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="sanal m s.pdf">
+                <span class="btn-caption">Download CV</span>
+                <i class="ph-bold ph-download-simple"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Headline End -->
+
+          <!-- Scroll Button Start -->
+          <!-- <div class="rotating-btn">
+            <a href="#portfolio" class="rotating-btn__link slide-down">
+              <!-- SVG rotating text ->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve"
+                class="animate-rotation" data-value="360">
+                <defs>
+                  <path id="textPath" d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"/>
+                </defs>
+                <g>
+                  <use xlink:href="#textPath" fill="none"></use>
+                  <text>
+                    <!-- button text here!!! >
+                    <textPath xlink:href="#textPath">Scroll for More * Scroll for More * </textPath>
+                  </text>
+                </g>
+              </svg>
+              <!-- arrow icon ->
+              <i class="ph-bold ph-arrow-down"></i>
+            </a>
+          </div> -->
+          <!-- Scroll Button End -->
+
+        </section>
+        <!-- Intro Section End -->
+
+        <!-- Portfolio Section Start -->
+        <section id="portfolio" class="inner inner-first portfolio">
+
+          <!-- Content Block - H2 Section Title Start -->
+          <div class="content__block section-grid-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Portfolio</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Step Into My Creative Lab</h2>
+          </div>
+          <!-- Content Block - H2 Section Title End -->
+
+          <!-- Content Block - Works Gallery Start -->
+          <div class="content__block grid-block">
+            <div class="container-fluid px-0 inner__gallery">
+              <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+ 
+
+<!-- hobby project starts from here -->
+<!-- Works Gallery Single Item Start -->
+<figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="img/navigate.png" data-image="img/navigate.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+    <img src="img/navigate.png" class="gallery__image" itemprop="thumbnail" alt="MINI PROJECT: GESTURE CONTROLLED PRESENTATION">
+  </a>
+  <figcaption class="gallery__descr" itemprop="caption description">
+    <h5>MINI PROJECT: GESTURE CONTROLLED PRESENTATION</h5>
+    <div class="card__tags d-flex flex-wrap">
+      <span class="rounded-tag opposite">Gesture Recognition</span>
+      <span class="rounded-tag opposite">Presentation Control</span>
+      <span class="rounded-tag opposite">Python</span>
+      <span class="rounded-tag opposite">mediapipe</span>
+    </div>
+    <p class="small">The Gesture-Controlled Presentation project aims to develop an innovative system that al-
+      lows users to control presentations using hand gestures. By leveraging computer vision and
+      machine learning techniques, this system recognizes and interprets user gestures in real-time,
+      translating them into commands for presentation software. As the demand for interactive and
+      engaging presentation methods grows, traditional input devices such as keyboards and mice
+      may limit user experience.</p>
+    <!-- <p class="small">Key skills: Data Cleaning, Feature Engineering, Classification, Model Evaluation, Hyperparameter Tuning, and Data Visualization.</p> -->
+  </figcaption>
+</figure>
+<!-- Works Gallery Single Item End -->
+
+<!-- Works Gallery Single Item Start -->
+<figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="img/wether.png" data-image="img/wether.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+    <img src="img/wether.png" class="gallery__image" itemprop="thumbnail" alt="ProText Analyzer Project">
+  </a>
+  <figcaption class="gallery__descr opposite" itemprop="caption description">
+    <h5 class="opposite">weather forecast website</h5>
+    <div class="card__tags d-flex flex-wrap">
+      <span class="rounded-tag">HTML</span>
+      <span class="rounded-tag">CSS</span>
+      <span class="rounded-tag">Java script</span>
+      <span class="rounded-tag">weather forecast</span>
+    </div>
+    <p class="small"> A weather forecast website providing real-time updates on temperature, humidity, wind speed, and future predictions. Stay informed with accurate weather insights for your location, including severe weather alerts and interactive maps.</p>
+  </figcaption>
+</figure>
+<!-- Works Gallery Single Item End -->
+
+
+<!-- Works Gallery Single Item Start -->
+<figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="img/Smart-Home-Automation.png" data-image="img/Smart-Home-Automation.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+    <img src="img/Smart-Home-Automation.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+  </a>
+  <figcaption class="gallery__descr opposite" itemprop="caption description">
+    <h5 class="opposite">Main Project:home automation using esp8266</h5>
+    <div class="card__tags d-flex flex-wrap">
+      <span class="rounded-tag">ESP8266</span>
+      <span class="rounded-tag">IoT</span>
+      <span class="rounded-tag">Sensors</span>
+      <span class="rounded-tag">Automation</span>
+      <span class="rounded-tag">Cloud Integration</span>
+    </div>
+    <p class="small">Home automation using ESP8266 is an IoT-based project that enables smart control of household appliances. By integrating sensors like temperature and ultrasonic sensors, the system automates tasks such as controlling an AC based on room temperature and monitoring water levels in a tank. With Wi-Fi connectivity, users can remotely manage and monitor their home environment, enhancing convenience, energy efficiency, and security.</p>
+  </figcaption>
+</figure>
+<!-- Works Gallery Single Item End -->
+
+<!-- Works Gallery Single Item Start -->
+<figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+  <a href="img/window.png" data-image="img/window.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+    <img src="img/window.png" class="gallery__image" itemprop="thumbnail" alt="House Price Prediction">
+  </a>
+  <figcaption class="gallery__descr opposite" itemprop="caption description">
+    <h5 class="opposite">Login screen</h5>
+    <div class="card__tags d-flex flex-wrap">
+      <span class="rounded-tag">HTML</span>
+      <span class="rounded-tag">CSS</span>
+    </div>
+    <p class="small">login interface overlaying a picturesque scene of a bridge with statues, likely at dusk. The background features a hazy skyline with silhouettes of buildings and towers, lending an atmospheric quality to the overall composition. The login form is centered, with fields for "Username" and "Password," accompanied by a "Login" button in a vibrant green. The contrasting colors between the background and the form create a visually appealing yet functional design, inviting users to access the system.    </p>
+  </figcaption>
+</figure>
+<!-- Works Gallery Single Item End -->
+
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - Works Gallery End -->
+
+        </section>
+        <!-- Portfolio Section End -->
+
+        <!-- About Section Start -->
+        <section id="about" class="inner about">
+
+          <!-- Content Block - H2 Section Title Start -->
+          <div class="content__block section-grid-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>About Me</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Exploring, evolving, and uncovering new possibilities every day</h2>
+          </div>
+          <!-- Content Block - H2 Section Title End -->
+
+
+
+          <!-- Content Block - About Me Data Start -->
+          <div class="content__block grid-block block-large">
+            <div class="container-fluid p-0">
+              <div class="row g-0 justify-content-between">
+
+                <!-- About Me Description Start -->
+                <div class="col-12 col-xl-8 grid-item about-descr">
+                  <p class="about-descr__text animate-in-up">
+                    I often find myself wondering: Have I changed today? Am I the same designer I was when I started this journey, or did something shift along the way? Maybe, just maybe, I’ve learned a new design principle, solved a complex usability issue, or discovered an interaction pattern that transformed the way I see digital experiences. If I’m not exactly the same, then the real question is,
+                    <a href="#0" class="text-link">" "Who am I, really?"</a>
+                    And that’s the puzzle that keeps me going
+                  </p>
+                  <p class="about-descr__text animate-in-up">
+                    Life is an endless evolution, constantly growing and embracing the uncertainty that comes with each new challenge. In the world of Data Science, there’s always something new to learn, a new project to tackle, or a fresh perspective to explore. Each dataset, every machine learning model, and every problem solved doesn’t just teach me technical skills, but helps me understand more about who I am and what I’m capable of.
+                    <a href="#0" class="text-link">I may not have all the answers yet,</a>
+                    but with every step I take, I’m uncovering more of them. This journey never ends, and that’s what makes it so exciting.
+                    change the content to a ui/ux designer,s about
+                  </p>
+                  <div class="btn-group about-descr__btnholder animate-in-up">
+                    <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="https://github.com/sanal-m-s">
+                      <span class="btn-caption">Discover my evolving journey on github</span>
+                      <i class="ph-bold ph-folder"></i> 
+                    </a>
+                  </div>
+                </div>
+                <!-- About Me Description End -->
+
+                <!-- About Me Information Start -->
+                <div class="col-12 col-xl-4 grid-item about-info">
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Name</small>
+                      Sanal M S 
+                    </h6>
+                  </div>
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Phone</small>
+                      <a class="text-link-bold" href="https://wa.me/+918547931827">+91 8547931827</a>
+                    </h6>
+                  </div>
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Email</small>
+                      <a class="text-link-bold" href="mailto:sanalms08@gmail.com?subject=Message%20from%20your%20site">sanalms08@gmail.com</a>
+                    </h6>
+                  </div>
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Location</small>
+                      <a class="text-link-bold" href="https://maps.app.goo.gl/hLhGzKkJ37m3GRw48" target="_blank">kochi , India</a>
+                    </h6>
+                  </div>
+                </div>
+                <!-- About Me Information End -->
+
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - About Me Data End -->
+
+          <!--Content Block - Services Start -->
+          <!--
+          <div class="content__block grid-block">
+            <div class="container-fluid p-0">
+              <div class="row g-0 align-items-stretch cards">
+                <!- services cards grid single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Data Collection</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Raw Data Gathering</span>
+                        <span class="rounded-tag tag-outline">Web Scraping</span>
+                        <span class="rounded-tag tag-outline">APIs</span>
+                        <span class="rounded-tag tag-outline">IoT Sensors</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                        I gather diverse data — structured, semi-structured, and unstructured — from various sources like databases, APIs, web scraping, and IoT sensors. I use powerful tools like <strong>Pandas</strong>, <strong>Requests</strong>, <strong>BeautifulSoup</strong>, and <strong>Scrapy</strong> for efficient data extraction and processing.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/DataCollection.png" alt="Data Collection Image">
+                    </div>
+                  </div>
+                </div>                
+                <!- services grid cards single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Data Cleaning and Preprocessing</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Missing Values</span>
+                        <span class="rounded-tag tag-outline">Data Transformation</span>
+                        <span class="rounded-tag tag-outline">Outlier Detection</span>
+                        <span class="rounded-tag tag-outline">Feature Engineering</span>
+                        <span class="rounded-tag tag-outline">Data Integration</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                        I clean and preprocess data by handling missing values, transforming features, detecting outliers, and merging datasets. I use powerful tools like <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>Scikit-learn</strong> to make sure the data is ready for analysis.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/Data_processingand_preprocessing.png" alt="Data Cleaning and Preprocessing Image">
+                    </div>
+                  </div>
+                </div>
+              <!- Start: Exploratory Data Analysis (EDA) Card ->
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">Exploratory Data Analysis (EDA)</h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">Data Visualization</span>
+                      <span class="rounded-tag tag-outline">Statistical Summary</span>
+                      <span class="rounded-tag tag-outline">Trends & Patterns</span>
+                      <span class="rounded-tag tag-outline">Insights Generation</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">
+                      I perform exploratory data analysis (EDA) to uncover patterns, trends, and insights from data. By leveraging statistical summaries and visualizations, I generate actionable insights using tools like <strong>Pandas</strong>, <strong>Matplotlib</strong>, <strong>Seaborn</strong>, and <strong>Power BI</strong>.
+                    </p>
+                  </div>
+                  <div class="cards__image d-flex animate-in-up">
+                    <img src="img/EDA.jpg" alt="Exploratory Data Analysis Image">
+                  </div>
+                </div>
+              </div>                            
+                <!- services grid cards single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Data Analysis</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Descriptive Analysis</span>
+                        <span class="rounded-tag tag-outline">Diagnostic Analysis</span>
+                        <span class="rounded-tag tag-outline">Predictive Analysis</span>
+                        <span class="rounded-tag tag-outline">Prescriptive Analysis</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                        I conduct comprehensive data analysis to summarize data, identify causes, forecast outcomes, and recommend actions. I use tools like <strong>Python (StatsModels, SciPy)</strong>, <strong>SQL</strong>, and <strong>Excel</strong> to perform these tasks effectively.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/Data_Analysis.jpg" alt="Data Analysis Image">
+                    </div>
+                  </div>
+                </div>
+                <!- services grid cards single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Statistical Modeling</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Linear Regression</span>
+                        <span class="rounded-tag tag-outline">Logistic Regression</span>
+                        <span class="rounded-tag tag-outline">Hypothesis Testing</span>
+                        <span class="rounded-tag tag-outline">Time Series Analysis</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                        I build statistical models to analyze and understand data, using methods like linear regression, logistic regression, hypothesis testing, and time series analysis. My go-to tools include <strong>StatsModels</strong> and <strong>SciPy</strong>.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/statsmodels.webp" alt="Statistical Modeling Image">
+                    </div>
+                  </div>
+                </div>
+                <!- services grid cards single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Machine Learning Development</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Supervised Learning</span>
+                        <span class="rounded-tag tag-outline">Unsupervised Learning</span>
+                        <span class="rounded-tag tag-outline">Model Training & Tuning</span>
+                        <span class="rounded-tag tag-outline">Deployment Ready Models</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                       supervised and unsupervised learning techniques. I focus on training, tuning, and optimizing models, making them ready for production deployment. My preferred tools include <strong>Scikit-learn</strong>, <strong>XGBoost</strong>, and <strong>LightGBM</strong>.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/Machine_Lraning.jpg" alt="Machine Learning Development Image">
+                    </div>
+                  </div>
+                </div>
+                 <!- services grid cards single item ->
+                 <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Deep Learning</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Neural Network Development</span>
+                        <span class="rounded-tag tag-outline">Computer Vision</span>
+                        <span class="rounded-tag tag-outline">Natural Language Processing</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">
+                        I build deep learning models for tasks like image classification, object detection, text classification, and sentiment analysis. My preferred tools include <strong>TensorFlow</strong>, <strong>Keras</strong>, <strong>PyTorch</strong>, <strong>Hugging Face</strong>, <strong>OpenCV</strong>, and <strong>NLTK</strong>.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/Deep Learning.png" alt="Deep Learning Image">
+                    </div>
+                  </div>
+                </div>
+                  <!- services grid cards single item ->
+                  <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                    <div class="cards__card d-flex flex-column">
+                      <div class="cards__descr">
+                        <h4 class="cards__title animate-in-up">Data Visualization and Reporting</h4>
+                        <div class="cards__tags d-flex flex-wrap animate-in-up">
+                          <span class="rounded-tag tag-outline">Dashboards</span>
+                          <span class="rounded-tag tag-outline">Storytelling with Data</span>
+                        </div>
+                        <p class="small cards__text animate-in-up">
+                          I design interactive dashboards and craft compelling data stories to effectively communicate insights to stakeholders. Tools: <strong>Power BI</strong>, <strong>Plotly</strong>, <strong>Dash</strong>, <strong>Matplotlib</strong>, <strong>Seaborn</strong>.
+                        </p>
+                      </div>
+                      <div class="cards__image d-flex animate-in-up">
+                        <img src="img/DataVisualizationandReporting.jpg" alt="Data Visualization and Reporting Image">
+                      </div>
+                    </div>
+                  </div>
+                  <!- services grid cards single item ->
+                  <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                    <div class="cards__card d-flex flex-column">
+                      <div class="cards__descr">
+                        <h4 class="cards__title animate-in-up">Data Pipelines and Automation</h4>
+                        <div class="cards__tags d-flex flex-wrap animate-in-up">
+                          <span class="rounded-tag tag-outline">ETL (Extract, Transform, Load)</span>
+                        </div>
+                        <p class="small cards__text animate-in-up">
+                          I automate data workflows by implementing ETL processes, efficiently collecting, transforming, and loading data into storage systems to empower data-driven decision-making.
+                        </p>
+                      </div>
+                      <div class="cards__image d-flex animate-in-up">
+                        <img src="img/ETL.jpg" alt="Data Pipelines and Automation Image">
+                      </div>
+                    </div>
+                  </div>
+                   <!- services grid cards single item ->
+                   <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                    <div class="cards__card d-flex flex-column">
+                      <div class="cards__descr">
+                        <h4 class="cards__title animate-in-up">Data Storage and Management</h4>
+                        <div class="cards__tags d-flex flex-wrap animate-in-up">
+                          <span class="rounded-tag tag-outline">Relational Databases</span>
+                        </div>
+                        <p class="small cards__text animate-in-up">
+                          I manage and store data in relational databases using SQL-based systems like MySQL, ensuring efficient retrieval and secure storage for optimal data access.
+                        </p>
+                      </div>
+                      <div class="cards__image d-flex animate-in-up">
+                        <img src="img/Data_Storage.webp" alt="Data Storage and Management Image">
+                      </div>
+                    </div>
+                  </div>
+                  <!- services grid cards single item ->
+                  <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                    <div class="cards__card d-flex flex-column">
+                      <div class="cards__descr">
+                        <h4 class="cards__title animate-in-up">Model Deployment and MLOps</h4>
+                        <div class="cards__tags d-flex flex-wrap animate-in-up">
+                          <span class="rounded-tag tag-outline">Model Deployment</span>
+                          <span class="rounded-tag tag-outline">Monitoring</span>
+                          <span class="rounded-tag tag-outline">Containerization</span>
+                        </div>
+                        <p class="small cards__text animate-in-up">
+                          I deploy machine learning models into production, monitor their performance, and ensure scalability using containerization technologies like Docker and Kubernetes. Key tools: <strong>Flask</strong>, <strong>FastAPI</strong>, <strong>MLflow</strong>, <strong>AWS SageMaker</strong>, <strong>Docker</strong>.
+                        </p>
+                      </div>
+                      <div class="cards__image d-flex animate-in-up">
+                        <img src="img/MLOPS.jpg" alt="Model Deployment and MLOps Image">
+                      </div>
+                    </div>
+                  </div>
+                   <!- services grid cards single item ->
+                   <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                    <div class="cards__card d-flex flex-column">
+                      <div class="cards__descr">
+                        <h4 class="cards__title animate-in-up">Optimization and Automation</h4>
+                        <div class="cards__tags d-flex flex-wrap animate-in-up">
+                          <span class="rounded-tag tag-outline">Model Optimization</span>
+                          <span class="rounded-tag tag-outline">Automation</span>
+                        </div>
+                        <p class="small cards__text animate-in-up">
+                          In my experience, improving model accuracy through hyperparameter tuning is crucial for optimizing performance. At the same time, automating repetitive tasks can significantly enhance overall efficiency. To achieve this, I use tools like <strong>Optuna</strong> and <strong>GridSearchCV</strong> for fine-tuning model parameters, and I implement <strong>Automation scripts</strong> to streamline workflows and save time.
+                        </p>
+                      </div>
+                      <div class="cards__image d-flex animate-in-up">
+                        <img src="img/optimization.jpg" alt="Optimization and Automation Image">
+                      </div>
+                    </div>
+                  </div>
+                    <!- services grid cards single item ->
+                    <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                      <div class="cards__card d-flex flex-column">
+                        <div class="cards__descr">
+                          <h4 class="cards__title animate-in-up">Business Intelligence and Decision-Making</h4>
+                          <div class="cards__tags d-flex flex-wrap animate-in-up">
+                            <span class="rounded-tag tag-outline">Data-Driven Decisions</span>
+                            <span class="rounded-tag tag-outline">KPI Tracking</span>
+                          </div>
+                          <p class="small cards__text animate-in-up">
+                           I focus on enabling data-driven decision-making by tracking key performance indicators (KPIs) that measure success. I leverage tools like <strong>Power BI</strong> and <strong>Excel Dashboards</strong> to create insightful visualizations and reports, helping businesses make informed decisions based on real-time data analysis.
+                          </p>
+                        </div>
+                        <div class="cards__image d-flex animate-in-up">
+                          <img src="img/POWERBI.jpg" alt="Business Intelligence and Decision-Making Image">
+                        </div>
+                      </div>
+                    </div>
+                     <!- services grid cards single item ->
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Research and Experimentation</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">AB Testing</span>
+                        <span class="rounded-tag tag-outline">Innovation</span>
+                      </div>
+                      <p class="small cards__text animate-in-up"> I actively engage in research and experimentation to test different approaches and solve unique problems. This includes conducting A/B testing to validate hypotheses and using advanced tools like <strong>SciPy</strong>, <strong>NumPy</strong>, and <strong>PyExperimenter</strong> to build custom models and algorithms. Through this, I continuously innovate and refine processes for optimal outcomes.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="img/experment.jpg" alt="Research and Experimentation Image">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - Services End>
+             -->
+        </section>
+        <!-- About Section End -->
+
+        <!-- Resume Section Start -->
+        <section id="resume" class="inner resume">
+
+          <!-- Content Block - H2 Section Title Start -->
+          <div class="content__block block-large">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Resume</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Education and practical experience</h2>
+            <p class="h2__text animate-in-up">
+              The biggest risk is not taking any risk... In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks.
+            </p>
+            <p class="h2__text animate-in-up">
+              The person I am today is a direct result of the risks I’ve taken. Every challenge, every new project, and every step into the unknown has shaped my journey. For me, education isn’t just about gaining knowledge—it’s about pushing my limits, embracing new opportunities, and evolving with each experience. Every risk I take brings me closer to unlocking new possibilities and becoming the best version of myself.
+            </p>
+          </div>
+          <!-- Content Block - H2 Section Title End -->
+
+          <!-- Content Block - Education Start -->
+          <div class="content__block block-large">
+
+            <!-- H3 Block Start -->
+            <div class="section-h3">
+              <h3 class="h3__title animate-in-up">My education</h3>
+            </div>
+            <!-- H3 Block End -->
+
+            <!-- Education Lines Start -->
+            <div class="container-fluid p-0 resume-lines">
+              <!-- education single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2017 - 2019</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">12th Grade (computer Science)</h5>
+                  <p class="resume-lines__source animate-in-up">Studied at
+                    <a href="https://maps.app.goo.gl/daa39NMXVRomNc3M7" class="text-link-bold" target="_blank">Government Higher Secondary School, Elamakkara</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Higher Secondary Level - computer Science Stream</p>
+                </div>
+              </div>
+              <!-- education single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2019 - 2022</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">BSC Electronics </h5>
+                  <p class="resume-lines__source animate-in-up">Studied at
+                    <a href="https://maps.app.goo.gl/AtEZXFRWpQXbK1KS9" class="text-link-bold" target="_blank">mahatma gandhi university</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">BSC Electronics model (lll) (revised)</p>
+                </div>
+              </div>              
+              <!-- education single item -->
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2023-2025</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Master of Computer Applications (MCA)</h5>
+                  <p class="resume-lines__source animate-in-up">studying at
+                    <a href="https://www.rit.ac.in/" class="text-link-bold" target="_blank">rajiv gandhi institute of technology kottayam</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">MCA</p>
+                </div>
+              </div>
+            <!-- education single item -->
+            <div class="row g-0 resume-lines__item animate-in-up">
+              <div class="col-12 col-md-2">
+                <span class="resume-lines__date animate-in-up">2025 march</span>
+              </div>
+              <div class="col-12 col-md-5">
+                <h5 class="resume-lines__title animate-in-up">Introduction to Figma</h5>
+                <p class="resume-lines__source animate-in-up">Studied at
+                  <a href="https://www.simplilearn.com/" class="text-link-bold" target="_blank">Simplilearn</a>
+                </p>
+              </div>
+              <div class="col-12 col-md-5">
+                <p class="small resume-lines__descr animate-in-up">This course helped me enhance my UI/UX design skills and gain hands-on experience with Figma</p>
+              </div>
+            </div>
+            <!-- Education Lines End -->
+
+          </div>
+          <!-- Content Block - Education End -->
+
+
+
+          </div>
+          <!-- Content Block - Experience End -->
+
+          <!-- Content Block - H3 Block Start -->
+          <div class="content__block">
+            <div class="section-h3 section-h3-grid">
+              <h3 class="h3__title animate-in-up">My Favourite Tools & Libraries</h3>
+            </div>
+          </div>
+          <!-- Content Block - H3 Block End -->
+
+          <!-- Content Block - Tools List Start -->
+          <div class="content__block grid-block block-large">
+            <!-- Tools List Start -->
+            <div class="tools-cards d-flex justify-content-start flex-wrap">
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Figma.png" alt="Figma Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/AdobeXD.png" alt="Adobe XD Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Adobe XD</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Sketch.png" alt="Sketch Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Sketch</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Invision.png" alt="InVision Icon">
+                  <h6 class="tools-cards__caption animate-in-up">InVision</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Photoshop.png" alt="Photoshop Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Photoshop</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Illustrator.png" alt="Illustrator Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Illustrator</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Canva.png" alt="Canva Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Canva</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Framer.png" alt="Framer Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Framer</h6>
+                </div>
+              </div>
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Webflow.png" alt="Webflow Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Webflow</h6>
+                </div>
+              </div>                           
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Axure.png" alt="Axure Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Axure</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Balsamiq.png" alt="Balsamiq Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Balsamiq</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Hotjar.png" alt="Hotjar Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Hotjar</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Miro.png" alt="Miro Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Miro</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Notion.png" alt="Notion Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Notion</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Trello.png" alt="Trello Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Trello</h6>
+                </div>
+              </div>              
+              <!-- tools single item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Zeplin.png" alt="Zeplin Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Zeplin</h6>
+                </div>
+              </div> 
+              <!-- tools simgle item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Python.webp" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Python</h6>
+                </div>
+              </div>              
+              <!-- tools simgle item --><!-- tools simgle item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Vscode.png" alt="VS Code Icon">
+                  <h6 class="tools-cards__caption animate-in-up">VS Code</h6>
+                </div>
+              </div>                            
+              <!-- tools simgle item --><!-- tools simgle item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Git.png" alt="Git Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Git</h6>
+                </div>
+              </div>                            
+              <!-- tools simgle item --><!-- tools simgle item -->
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="img/icons/Github.png" alt="GitHub Icon">
+                  <h6 class="tools-cards__caption animate-in-up">GitHub</h6>
+                </div>
+              </div>                                  
+            <!-- Tools List End -->
+          </div>
+          <!-- Content Block - Tools List End -->
+
+          <!-- Content Block - H2 Block Start -->
+           <!--
+          <div class="content__block section-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Testimonials</span>
+            </p>
+            <h2 class="h2__title animate-in-up">What My Close Ones Say About Me</h2>
+          </div>
+          <!- Content Block - H2 Block End -->
+
+          <!-- Content Block - Testimonials Slider Start ->
+          <div class="content__block">
+                      <!- Testimonials Slider Start ->
+                      <div class="testimonials-slider">
+                        <!- slider main container ->
+                        <div class="swiper-testimonials">
+                          <!- additional required wrapper ->
+                          <div class="swiper-wrapper">
+                            <!- slides ->
+                            <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/Abhineet.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Abhineet Ranjan</p>
+                                    <p class="tauthor__position">Senior Acturial Analyst at
+                                      <a href="https://www.linkedin.com/in/abhineet-ranjan-9583b5183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-link-bold" target="_blank">AON</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p> Ruby is an extremely passionate and enthusiastic data scientist. Every day, her curiosity and drive to learn something new inspire everyone around her. She tackles problems with immense creativity and constantly explores new possibilities. Watching her grow and evolve into such an exceptional professional has been truly amazing. I'm proud to see how much she's achieved and excited for her future success!</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://www.linkedin.com/in/abhineet-ranjan-9583b5183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                             <!- slides ->
+                             <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/Aditi.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Aditi Rajput</p>
+                                    <p class="tauthor__position">Data Scientist at 
+                                      <a href="https://vcaretechnicalinstitute.com/" class="text-link-bold" target="_blank">Vcare Technical Coding Institute</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p>Ruby is the backbone of our 5-member team at Vcare Technical Coding Institute. She not only manages but also excels in every data science project we take on—whether it's machine learning, AI, or computer vision. Her relentless drive to explore, learn, and solve complex problems inspires all of us. With her leadership and expertise, every project feels like an opportunity to grow. I’m truly excited for the remarkable journey ahead for Ruby!</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://www.linkedin.com/in/aditi-rajput-b7a782188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!- slides ->
+                            <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/Vimal.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Vimal Gautam</p>
+                                    <p class="tauthor__position">Senior Data Scientist Trainer at 
+                                      <a href="https://vcaretechnicalinstitute.com/" class="text-link-bold" target="_blank">Vcare Technical Coding Institute</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p> I still remember when she started her journey with zero knowledge in Data Science, but her relentless commitment, practicing 12 hours a day, and her thirst for exploring new depths made her unstoppable. Watching her grow into a confident, skilled professional has been one of the most fulfilling experiences of my teaching career. She’s not just a student; she’s an inspiration.</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://vcaretechnicalinstitute.com/">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!- slides ->
+                            <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/Surojit.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Surojit Biswas</p>
+                                    <p class="tauthor__position">Data Analyst at 
+                                      <a href="https://techwens.com/" class="text-link-bold" target="_blank">Techwens Software Pvt. Ltd.</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p>Ruby is truly exceptional! From basic to advanced projects, her ability to grasp and explain even the toughest concepts is extraordinary. Every collaboration with her has been a learning experience, and her unique perspective always adds value. Not only is she an outstanding communicator, but she also manages every task with grace and efficiency, making her a standout in any team!</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://www.facebook.com/share/1CgkVWrUoY/">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!- slides ->
+                            <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/RiteshRajput.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Ritesh Ray</p>
+                                    <p class="tauthor__position">Senior Full-Stack Developer at
+                                      <a href="https://www.linkedin.com/in/ritesh-ray-682056319" class="text-link-bold" target="_blank">Udemy</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p>When I switched from full-stack development to data science, I felt completely lost and overwhelmed. But Ruby was there every step of the way, guiding me with immense patience and clarity. Her teaching style, which connects every concept to real-life examples, made learning effortless and unforgettable. Under her mentorship, I’ve gained not only knowledge but also the confidence to explore and excel in this field</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://www.linkedin.com/in/ritesh-ray-682056319">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!- slides ->
+                            <div class="swiper-slide">
+                              <div class="testimonials-card animate-in-up">
+                                <div class="testimonials-card__tauthor d-flex animate-in-up">
+                                  <div class="tauthor__avatar">
+                                    <img src="img/Sanskriti.jpg" alt="Review Author">
+                                  </div>
+                                  <div class="tauthor__info d-flex flex-column justify-content-center">
+                                    <p class="tauthor__name">Sanskriti Krishnan Datta</p>
+                                    <p class="tauthor__position">Data Scientist at 
+                                      <a href="https://vcaretechnicalinstitute.com/" class="text-link-bold" target="_blank">Vcare Technical Coding Institute</a>
+                                    </p>
+                                    <div class="tauthor__rating d-flex">
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                      <i class="ph-fill ph-star"></i>
+                                    </div>
+                                  </div>
+                                </div>  
+                                <div class="testimonials-card__descr animate-in-up">
+                                  <p>Ruby is an invaluable member of our team, and honestly, without her, our work would be incomplete. She resolves every little and big error with ease. Not only does she teach, but she also explains concepts clearly, making learning effortless. Her real-life knowledge is truly unique and highly useful for our team. Projects that would typically take longer are completed swiftly under her guidance, making her an indispensable asset to our team.</p>
+                                </div>
+                                <div class="testimonials-card__btnholder animate-in-up">
+                                  <a class="btn mobile-vertical btn-line btn-transparent slide-right" href="https://vcaretechnicalinstitute.com/">
+                                    <span class="btn-caption">Get in Touch</span>
+                                    <i class="ph-bold ph-arrow-right"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                              </div>
+                            </div>
+                          </div>
+                          
+                          -->
+
+        </section>
+        <!-- Resume Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="inner contact">
+
+          <!-- Content Block - H2 Section Title Start -->
+          <div class="content__block section-title">
+            <p class="h2__subtitle  animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Contact</span>
+            </p>
+            <h2 class="h2__title  animate-in-up">Feel free to connect with me anytime!</h2>
+          </div>
+          <!-- Content Block - H2 Section Title End -->
+
+          <!-- Content Block - Contact Form Start -->
+          <div class="content__block grid-block block-grid-large">
+            <div class="form-container">
+
+              <!-- Reply Messages Start -->
+              <div class="form__reply centered text-center">
+                <i class="ph-bold ph-smiley reply__icon"></i>
+                <p class="reply__title">Done!</p>
+                <span class="reply__text">Thanks for your message. I'll get back as soon as possible.</span>
+              </div>
+              <!-- Reply Messages End -->
+
+              <!-- Contact Form Start -->
+              <form class="form contact-form" id="contact-form" action="https://formspree.io/f/mzzbnkjk" method="POST">
+                <div class="container-fluid p-0">
+                  <div class="row gx-0">
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="text" name="name" placeholder="Your Name*" required>
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="text" name="company" placeholder="Company Name">
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="email" name="email" placeholder="Email Address*" required>
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="tel" name="phone" placeholder="Phone Number*" required>
+                    </div>
+                    <div class="col-12 form__item animate-in-up">
+                      <textarea name="message" placeholder="A Few Words*" required></textarea>
+                    </div>
+                    <div class="col-12 form__item animate-in-up">
+                      <button class="btn btn-default btn-hover btn-hover-accent" type="submit" id="submit-btn">
+                        <span class="btn-caption">Send Message</span>
+                        <i class="ph-bold ph-paper-plane-tilt"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div id="popup" class="popup">
+                <div class="popup-content">
+                  <p id="popup-message" class="btn-caption"></p>
+                  <button onclick="closePopup()" class="btn btn-default btn-hover btn-hover-accent" type="button">
+                    <span class="btn-caption">OK</span>
+                    <i class="ph-bold ph-paper-plane-tilt"></i>
+                  </button>
+                </div>
+              </div>
+          <!-- Content Block - Contact Form End -->
+
+          <!-- Blog Section Start -->
+          <section id="blog" class="inner blog">
+              <div class="content__block section-title">
+                  <p class="h2__subtitle animate-in-up">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                          <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                          C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                          C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+                      </svg>
+                      <span>Blog Posts</span>
+                  </p>
+                  <h2 class="h2__title animate-in-up">Your Next Favorite Read!
+Don’t miss out on the latest updates</h2>
+              </div>
+
+              <div class="content__block">
+                <div class="blog-carousel">
+                    <div class="swiper-container blog-slider">
+                        <div class="swiper-wrapper" id="medium-posts">
+                            <!-- Posts will be inserted here -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>            
+
+          <!-- Content Block - Socials Cards Start -->
+          <div class="content__block grid-block">
+            <div class="socials-cards d-flex justify-content-start flex-wrap">
+              <!-- socials item -->
+              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                <div class="socials-cards__card">
+                  <i class="ph-bold ph-whatsapp-logo"></i>
+                  <a class="socials-cards__link" href="https://wa.me/+918547931827" target="_blank"></a>
+                </div>
+              </div>
+              <!-- socials item -->
+              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                <div class="socials-cards__card">
+                  <i class="ph-bold ph-twitter-logo"></i>
+                  <a class="socials-cards__link" href="https://x.com/sanal291636" target="_blank"></a>
+                </div>
+              </div>
+              <!-- socials item -->
+              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                <div class="socials-cards__card">
+                  <i class="ph-bold ph-instagram-logo"></i>
+                  <a class="socials-cards__link" href="https://www.instagram.com/__.sanal.__/" target="_blank"></a>
+                </div>
+              </div>
+              <!-- socials item -->
+              <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+                <div class="socials-cards__card">
+                  <i class="ph-bold ph-linkedin-logo"></i>
+                  <a class="socials-cards__link" href="https://www.linkedin.com/in/sanal-m-s-a75b77276/" target="_blank"></a>
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - Socials Cards End -->
+
+          <!-- Content Block - Teaser Start -->
+          <div class="content__block">
+            <div class="teaser">
+              <p class="teaser__text animate-in-up">If you're curious to know more about my journey, would like to discuss my projects, or simply wish to connect, don’t hesitate to
+                <a class="text-link-bold" href="mailto:sanalms08@gmail.com">drop a message.</a>
+                I value meaningful conversations and will respond as promptly as possible.
+              </p>
+            </div>
+          </div>
+          <!-- Content Block - Teaser End -->
+
+
+
+          <!-- Content Block - Contact Data Start -->
+          <div class="content__block">
+            <div class="container-fluid p-0 contact-lines animate-in-up">
+              <div class="row g-0 contact-lines__item">
+                <!-- data item -->
+                <div class="col-12 col-md-4 contact-lines__data">
+                  <p class="contact-lines__title animate-in-up">Location</p>
+                  <p class="contact-lines__text animate-in-up">
+                    <a class="text-link-bold" href="https://www.bing.com/maps?&ty=30&q=kochi&satid=id.sid%3Ace548a32-d28c-c3d5-f50a-f83894e62cdf&vdpid=7478885673169059841&mb=10.020872~76.147416~9.889781~76.364714&cardbg=%23F98745&tt=Kochi%2C%20Kerala&tsts1=%2526ty%253D30%2526q%253Dkochi%2526satid%253Did.sid%25253Ace548a32-d28c-c3d5-f50a-f83894e62cdf%2526vdpid%253D7478885673169059841%2526mb%253D10.020872~76.147416~9.889781~76.364714%2526cardbg%253D%252523F98745&tstt1=Kochi%2C%20Kerala&cp=9.955426~76.204257&lvl=12.716473&pi=0&ftst=1&ftics=True&v=2&sV=2&form=S00027" target="_blank">kochi , India</a>
+                  </p>
+                </div>
+                <!-- data item -->
+                <div class="col-12 col-md-4 contact-lines__data">
+                  <p class="contact-lines__title animate-in-up">Phone</p>
+                  <p class="contact-lines__text animate-in-up">
+                    <a class="text-link-bold" href="https://wa.me/+918547931827">+91 8547931827</a>
+                  </p>
+                </div>
+                <!-- data item -->
+                <div class="col-12 col-md-4 contact-lines__data">
+                  <p class="contact-lines__title animate-in-up">Email</p>
+                  <p class="contact-lines__text animate-in-up">
+                    <a class="text-link-bold" href="mailto:sanalms08@gmail.com">sanalms08@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Block - Contact Data End -->
+
+        </section>
+        <!-- Contact Section End -->
+
+      </div>
+    </div>
+    <!-- Page Content End -->
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+              <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+
+            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+              <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <button id="back-to-top" class="back-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D9BED7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+  </button>
+
+    <!-- Load Scripts Start -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('back-to-top');
+    let isScrolling = false;
+    let scrollTimeout;
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+        
+        // Add scrolling class while scrolling
+        clearTimeout(scrollTimeout);
+        if (!isScrolling) {
+            backToTopButton.classList.add('scrolling');
+        }
+        
+        scrollTimeout = setTimeout(() => {
+            backToTopButton.classList.remove('scrolling');
+        }, 150);
+    });
+
+    // Smooth scroll to top with animation
+    backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!isScrolling) {
+            isScrolling = true;
+            backToTopButton.classList.add('scrolling');
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            // Remove scrolling class after animation
+            setTimeout(() => {
+                backToTopButton.classList.remove('scrolling');
+                isScrolling = false;
+            }, 1000);
+        }
+    });
+
+    // Remove scrolling class when scroll ends
+    window.addEventListener('scrollend', function() {
+        backToTopButton.classList.remove('scrolling');
+        isScrolling = false;
+    });
+});
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+
+    function showPopup(message) {
+      popupMessage.textContent = message;
+      popup.style.display = 'flex';
+    }
+
+    function closePopup() {
+      popup.style.display = 'none';
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.querySelector('.btn-caption').textContent = 'Sending...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          showPopup('Sent successfully');
+          form.reset();
+        } else {
+          showPopup('Failed to send');
+        }
+      })
+      .catch(error => {
+        showPopup('Failed to send');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.querySelector('.btn-caption').textContent = 'Send Message';
+      });
+    });
+
+    // Close popup when clicking outside
+    popup.addEventListener('click', function(e) {
+      if (e.target === popup) {
+        closePopup();
+      }
+    });
+
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && popup.style.display === 'flex') {
+        closePopup();
+      }
+    });
+    </script>
+    <script src="js/libs.min.js"></script>
+    <script>
+      const content = document.querySelector('body');
+      const imgLoad = imagesLoaded(content);
+      imgLoad.on('done', instance => {
+        setTimeout(() => {
+          document.getElementById("svgBackground").classList.add("loaded");
+        }, "1000");
+      });
+
+      async function fetchGitHubActivity() {
+        try {
+          const username = 'rubydamodar';
+          const response = await fetch(`https://api.github.com/users/${username}/events/public`);
+          const events = await response.json();
+
+          const feedContainer = document.getElementById('github-activity-feed');
+          const filteredEvents = events.slice(0, 5);
+
+          filteredEvents.forEach(event => {
+            const eventDiv = document.createElement('div');
+            eventDiv.className = 'github-event animate-in-up';
+
+            let eventContent = '';
+            let eventIcon = 'ph-git-branch';
+
+            switch(event.type) {
+              case 'PushEvent':
+                eventContent = `Pushed new updates to ${event.repo.name}`;
+                eventIcon = 'ph-git-commit';
+                break;
+              case 'CreateEvent':
+                eventContent = `Created ${event.payload.ref_type} in ${event.repo.name}`;
+                eventIcon = 'ph-git-branch';
+                break;
+              case 'IssuesEvent':
+                eventContent = `${event.payload.action} issue in ${event.repo.name}`;
+                eventIcon = 'ph-circle-dashed';
+                break;
+              case 'PullRequestEvent':
+                eventContent = `${event.payload.action} pull request in ${event.repo.name}`;
+                eventIcon = 'ph-git-pull-request';
+                break;
+              default:
+                eventContent = `Activity in ${event.repo.name}`;
+                eventIcon = 'ph-github-logo';
+            }
+
+            const date = new Date(event.created_at).toLocaleDateString('en-US', {
+              month: 'short',
+              day: 'numeric',
+              year: 'numeric'
+            });
+
+            eventDiv.innerHTML = `
+              <div class="github-event-icon">
+                <i class="ph-bold ${eventIcon}"></i>
+              </div>
+              <div class="github-event-details">
+                <div class="github-event-title">${eventContent}</div>
+                <div class="github-event-meta">
+                  ${date}
+                  <a href="https://github.com/${event.repo.name}" class="github-event-link" target="_blank">
+                    View on GitHub
+                    <i class="ph-bold ph-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            `;
+
+            feedContainer.appendChild(eventDiv);
+          });
+
+        } catch (error) {
+          console.error('Error fetching GitHub activity:', error);
+          document.getElementById('github-activity-feed').innerHTML = `
+            <div class="github-event">
+              <div class="github-event-details">
+                <div class="github-event-title">Unable to load GitHub activity</div>
+                <div class="github-event-meta">Please check back later</div>
+              </div>
+            </div>
+          `;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', fetchGitHubActivity);
+
+
+    //  // Function to fetch Article
+    //   function displayMediumPosts() {
+    //       // Current articles from 
+    //       const articles = [
+    //           {
+    //               title: "A Comprehensive Guide to Data Science for Beginners",
+    //               link: "",
+    //               pubDate: "August 2025",
+    //               imageUrl: "img/articles/DataScience.avif" // Add your image path here
+    //           },
+    //           {
+    //               title: "Top 10 Machine Learning Algorithms Every Data Scientist Should Know",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/MachineLearningAlgorithm.webp" // Add your image path here
+    //           },
+    //           {
+    //               title: "Data Preprocessing: Why and How to Clean Your Data",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Dataprocessing.png" // Add your image path here
+    //           },
+    //           {
+    //               title: "Understanding Data Visualization: Techniques Every Data Scientist Should Master",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/DataVisualization.webp" // Add your image path here
+    //           },
+    //           {
+    //               title: "Supervised vs. Unsupervised Learning: The Key Differences",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Supervisedunsupervised.webp" // Add your image path here
+    //           },
+    //           {
+    //               title: "Deep Learning: What You Need to Know",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Deeplearning.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "Time Series Analysis: How to Forecast with Data Science",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Timeseries.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "Exploring Natural Language Processing (NLP) in Data Science",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/NaturalLanguageProcessing.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "Introduction to Reinforcement Learning in Data Science",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Reinforcement_learning.avif" // Add your image path here
+    //           },
+    //           {
+    //               title: "Big Data: What It Is and How It Impacts Data Science",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Bigdata.webp" // Add your image path here
+    //           },
+    //           {
+    //               title: "Understanding Model Evaluation and Validation in Data Science",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/modelevauationvalidation.webp" // Add your image path here
+    //           },
+    //           {
+    //               title: "The Math Behind Machine Learning: A Deep Dive into the Fundamentals",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Mathematics.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "The Complete Data Science Handbook: Everything You Need to Know",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Masterdatascience.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "Becoming a Data Scientist: Essential Skills and Resources",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Datascientist.png" // Add your image path here
+    //           },
+    //           {
+    //               title: "The Evolution of Data Science: Trends and Technologies Shaping the Future",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Evolution.jpg" // Add your image path here
+    //           },
+    //           {
+    //               title: "Data Science Algorithms and Techniques You Must Master",
+    //               link: "",
+    //               pubDate: "June 2025",
+    //               imageUrl: "img/articles/Dataalgo.jpg" // Add your image path here
+    //           }
+    //       ];
+
+          const postsContainer = document.getElementById('medium-posts');
+          postsContainer.innerHTML = '';
+
+          articles.forEach(article => {
+              const slideHtml = `
+                  <div class="blog-card">
+                      <div class="blog-card__image">
+                          <img src="${article.imageUrl}"
+                               alt="${article.title}"
+                               onerror="this.src='https://placehold.co/600x400/1a1a1a/D9BED7?text=Blog+Post'">
+                          <div class="blog-card__overlay"></div>
+                      </div>
+                      <div class="blog-card__content">
+                          <div class="blog-card__meta">
+                              <span class="blog-card__date">${new Date(article.pubDate).toLocaleDateString('en-US', {
+                                  year: 'numeric',
+                                  month: 'long',
+                                  day: 'numeric'
+                              })}</span>
+                          </div>
+                          <h3 class="blog-card__title">${article.title}</h3>
+                          <a href="${article.link}" target="_blank" class="blog-card__link">
+                              Read More
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                                  <polyline points="12 5 19 12 12 19"></polyline>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              `;
+
+              postsContainer.innerHTML += slideHtml;
+          });
+      }
+
+      // Initialize when DOM is loaded
+      document.addEventListener('DOMContentLoaded', displayMediumPosts);
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/gallery-init.js"></script>
+    <!-- Load Scripts End -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </body>
+
+</html>
